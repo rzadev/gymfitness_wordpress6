@@ -19,13 +19,12 @@
             <!-- logo -->
 
             <?php
-            $args = array(
-                'theme_location' => 'main-menu',
-                'container' => 'nav',
-                'container_class' => 'main-menu'
-            );
-            wp_nav_menu($args); 
-                
+                $args = array(
+                    'theme_location' => 'main-menu',
+                    'container' => 'nav',
+                    'container_class' => 'main-menu'
+                );
+                wp_nav_menu($args);  
             ?>
 
         </div>
