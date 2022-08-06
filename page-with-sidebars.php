@@ -6,22 +6,9 @@ get_header(); ?>
 
     <main class="container page section with-sidebar">
         <div class="page-content">
-            <?php
-                while(have_posts()): the_post(); ?>
-                <h1 class="text-center text-primary"><?php the_title(); ?></h1>
-                    <?php
-                        // Check if an image exist
-                        if( has_post_thumbnail() ):
-                            the_post_thumbnail('blog', array('class' => 'feature-image'));
-                        endif;
-                    ?>
-                    <?php the_content(); ?>            
-            <?php endwhile; ?>
+            <?php get_template_part('template-parts/page', 'loop'); ?>
         </div>
-
-        <aside class="sidebar">
-            <h2>Sidebar here</h2>
-        </aside>
+        <?php get_sidebar(); ?>
     </main>
 
 <?php get_footer(); ?>
