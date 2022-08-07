@@ -1,5 +1,8 @@
 <?php
 
+// Link to the queries file
+require get_template_directory() . '/inc/queries.php';
+
 // Creates the menus
 function gymfitness_menus() {
     // WP function
