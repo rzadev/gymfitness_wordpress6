@@ -522,3 +522,7 @@ span.wpcf7-not-valid-tip {
     text-align: center;
     border: none;
 } 
+
+#map {
+    height: 300px;
+}
