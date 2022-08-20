@@ -347,6 +347,38 @@ img {
 }
 
 
+/** Categories **/
+.post-categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .post-categories {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        margin-top: 0;
+        z-index:2;
+    }
+}
+.post-categories li {
+    margin-right: 2rem;
+}
+.post-categories li:last-of-type {
+    margin-right: 0;
+}
+.post-categories a {
+    border-radius: .5rem;
+    background-color: var(--primary);
+    padding: .5rem 2rem;
+    color: var(--darkGray);
+    font-size: 2.2rem;
+    font-family: var(--mainFont);
+    color: var(--white);
+}
+
+
 /** Single class **/
 p.content-class {
     font-weight: 700;
@@ -427,3 +459,66 @@ p.content-class {
         grid-row: 2 / 4;
     }
 }
+
+
+
+/*** Contact Form **/
+.wpcf7-form p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpcf7-form p label,
+.wpcf7-form p span {
+    flex: 0 0 100%;
+}
+
+.wpcf7-form p span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpcf7-form-control {
+    flex: 0 0 100%;
+    border: 1px solid var(--lightGray);
+    padding: 1rem;
+}
+
+.wpcf7-submit {
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-family: var(--mainFont);
+    color: var(--white);
+    padding:1.2rem;
+}
+.wpcf7-submit:hover {
+    cursor: pointer;
+}
+
+.wpcf7-response-output {
+    background-color: red;
+    color: var(--white);
+    border: none;
+    text-align:center;
+}
+
+div.wpcf7 .ajax-loader {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 4rem;
+    width: 4rem;
+}
+
+span.wpcf7-not-valid-tip {
+    background-color: red;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    background-color: green;
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border: none;
+} 
