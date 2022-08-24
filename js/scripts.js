@@ -5,6 +5,10 @@ jQuery(document).ready(function($){
         // appendTo : '.site-header'
     });
 
-
+    // Run the bxSlider library on testimonials
+    $('.testimonials-list').bxSlider({
+        controls: false, 
+        mode: 'fade'
+    });
 
 });
