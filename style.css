@@ -131,6 +131,8 @@ img {
         justify-content: space-between;
         transition: all .3s ease;
     }
+
+    /* Fixed menu */
     .fixed-top {
         position: fixed;
         width: 100%;
